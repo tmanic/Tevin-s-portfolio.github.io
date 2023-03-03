@@ -24,6 +24,7 @@ header {
 .logo {
     display: flex;
     align-items: center;
+    
   }
   
 .logo a {
@@ -59,11 +60,14 @@ section {
 }
 
 section#home {
-	background-image: url("Sky.jpg");
+	background: url("Sky.jpg") no-repeat center center fixed;
 	background-size: cover;
 	background-position: center;
 	color: #fff;
 	text-align: center;
+    height: 100%;
+  width: 100%;
+  position: relative;
 }
 
 section#home h1 {
@@ -151,34 +155,41 @@ section#contact input[type="submit"]:hover {
 }
 
 .intro h1 {
-	color: #fff;
-	font-size: 4.5em;
-	padding: 20px;
-	display: inline-block;
-	margin-top: 200px;
-	margin-bottom: 20px;
-	border-radius: 0px 0px 15px 15px;
+	font-size: 48px;
+  font-weight: bold;
+  color: #333;
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+  margin-top: 65%;
 }
 
 .intro h2 {
-	color: #fff;
-	font-size: 2em;
-	padding: 20px;
-	display: inline-block;
-	margin-bottom: 20px;
-	border-radius: 15px 0px 15px 0px;
-	background-color: blue;
+	font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 1%;
+  max-width: 80%;
+  letter-spacing: 8px;
 }
 
 .intro p {
-	color: #fff;
-	font-size: 1.5em;
-	margin-bottom: 50px;
+	font-size: 24px;
+  font-weight: normal;
+  color: #000;
+  margin-top: 20%;
+  text-align: center;
+  padding-top: 15%;
 }
 
 .intro {
 	padding: 200px;
 	margin-bottom: 100px;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .logo {
