@@ -224,6 +224,38 @@ section#contact input[type="submit"]:hover {
 .back-to-top.active {
     display: block;
 }
+.service-columns {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+  }
+  
+  .service-column {
+	flex-basis: calc(50% - 10px);
+	margin-bottom: 20px;
+  }
+  
+  .service-item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+  }
+  
+  .service-item img {
+	max-width: 150px;
+	margin-right: 20px;
+  }
+  
+  .service-text h3 {
+	margin-top: 0;
+  }
+  
+  @media screen and (max-width: 768px) {
+	.service-column {
+	  flex-basis: 100%;
+	}
+  }
+  
 
 @media (max-width: 768px) {
 	header {
