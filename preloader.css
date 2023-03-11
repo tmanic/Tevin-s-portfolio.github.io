@@ -1,0 +1,8 @@
+#preloader{
+    background: black url(7fPN.gif) no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    background-size: 15%;
+    z-index: 100;
+    position: fixed;
+}
