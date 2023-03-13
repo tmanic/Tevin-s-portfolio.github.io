@@ -104,15 +104,11 @@ section#portfolio .project {
 	margin-bottom: 50px;
 }
 
-section#portfolio h3 {
-	font-size: 24px;
-	margin-bottom: 10px;
-}
-
 section#portfolio img {
 	width: 100%;
-	border-radius: 10px;
+	border-radius: 5px;
 	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+	height: auto;
 }
 
 section#contact label {
@@ -148,8 +144,16 @@ section#contact input[type="submit"]:hover {
     background-color: #E5F1F8;
     border-top: 14px solid #4C7C9B;
     padding-top: 50px;
+	padding: 20px;
+	text-align: center;
   }
-  
+  .project-grid {
+	display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+  }
 .intro p {
 	font-size: 20px;
 }
@@ -250,6 +254,90 @@ section#contact input[type="submit"]:hover {
 	margin-top: 0;
   }
   
+  #cv-button {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: #008CBA;
+	color: white;
+	border: none;
+	border-radius: 5%;
+	font-size: 20px;
+	padding: 15px;
+	box-shadow: 0px 0px 10px #888888;
+	z-index: 9999;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+#cv-button:hover {
+	background-color: #004E64;
+	box-shadow: 0px 0px 15px #888888;
+	transform: scale(1.1);
+}
+
+  #chat-button {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: #008CBA;
+	color: white;
+	border: none;
+	border-radius: 50%;
+	font-size: 20px;
+	padding: 15px;
+	box-shadow: 0px 0px 10px #888888;
+	z-index: 9999;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+#chat-button:hover {
+	background-color: #004E64;
+}
+
+/* styles for the pop-up chat box */
+#chat-box {
+	display: none;
+	position: fixed;
+	bottom: 80px;
+	right: 20px;
+	width: 300px;
+	height: 200px;
+	background-color: #F1F1F1;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px #888888;
+	z-index: 9998;
+	padding: 10px;
+	font-size: 16px;
+	overflow: hidden;
+}
+
+#chat-box h3 {
+	margin-top: 0;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#chat-box p {
+	margin: 10px 0;
+}
+
+#chat-box button {
+	background-color: #008CBA;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	padding: 10px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+#chat-box button:hover {
+	background-color: #004E64;
+}
+  
   @media screen and (max-width: 768px) {
 	.service-column {
 	  flex-basis: 100%;
@@ -329,19 +417,11 @@ section#contact input[type="submit"]:hover {
 		margin-bottom: 10px;
 	}
 
-	section#portfolio .project {
-		margin-bottom: 20px;
-	}
-
-	section#portfolio h3 {
-		font-size: 18px;
-		margin-bottom: 10px;
-	}
-
 	section#portfolio img {
 		width: 100%;
-		border-radius: 10px;
+		border-radius: 5px;
 		box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+		height: auto;
 	}
 
 	section#contact label {
